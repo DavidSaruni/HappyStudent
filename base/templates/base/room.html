@@ -15,7 +15,7 @@
               </path>
             </svg>
           </a>
-          <h3>Campaig Posts</h3>
+          <h3>Campaign Posts</h3>
         </div>
         {% if room.host == request.user %}
         <div class="room__topRight">
@@ -57,7 +57,7 @@
             <span>{{room.created|timesince}} ago</span>
           </div>
           <div class="room__hosted">
-            <p>Posted By</p>
+            <p>Posted By:</p>
             <a href="{% url 'user-profile' room.host.id %}" class="room__author">
               <div class="avatar avatar--small">
                 <img src="{{room.host.avatar.url}}" />
@@ -65,6 +65,19 @@
               <span>@{{room.host.username}}</span>
             </a>
           </div>
+
+          <!-- Form Rating -->
+          <h1>Star rating </h1>
+
+          <div class="rating">
+
+            <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+            <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+            <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+            <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+            <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+          </div>
+          <!-- Form Rating End -->
           <!-- <div class="room__details">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, tenetur laudantium? Dicta repellendus
             rerum consectetur, voluptatem repudiandae eum ea porro cupiditate provident nulla, deserunt, ab ipsum
