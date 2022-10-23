@@ -74,6 +74,7 @@
             <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
             <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
             <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+            <h3>Value:  <span class="myratings">0</span></h3>
           </div>
           <!-- Form Rating End -->
           </div>
@@ -155,5 +156,25 @@
     <!--  End -->
   </div>
 </main>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="script.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+
+     $("input[type='radio']").click(function(){
+           var sim =  $("input[type='radio']:checked").val();
+           //alert(sim);
+           if (sim<3) {
+           $('.myratings').css('color','red'); 
+           $(".myratings").text(sim);
+        }else{
+           $('.myratings').css('color','green');
+           $(".myratings").text(sim);
+        }
+        });
+
+
+     });
+</script>
 {% endblock content %}
