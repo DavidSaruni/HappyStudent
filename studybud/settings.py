@@ -27,8 +27,8 @@ SECRET_KEY = 'django-insecure-3#av2c6nptlbbb6^muqkchu&fe3wv&n$t2+g$v!ir-f5%doocb
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'happystudent.fan',
-    'boiboiyo.pythonanywhere.com',
+    'happystudent.fun',
+    '137.135.134.254',
     'localhost',
     '127.0.0.1'
 ]
