@@ -21,13 +21,13 @@ cd StudyBud
 pip install virtualenv
 
 # Then we create our virtual environment
-virtualenv envname
+virtualenv rate
 
 ```
 
 --> Activate the virtual environment :
 ```bash
-envname\scripts\activate
+rate\scripts\activate
 
 ```
 
